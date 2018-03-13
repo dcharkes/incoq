@@ -20,6 +20,11 @@ from incoq.compiler import get_argparser, extract_options, invoke
 # options and a dictionary of query options (i.e., a mapping from
 # query name to another dictionary).
 
+weblab_tasks = [
+    ('weblab/weblab_in', 'weblab/weblab_inc',
+     {'default_impl': 'inc'}),
+]
+
 twitter_tasks = [
     ('twitter/twitter_in', 'twitter/twitter_inc',
      {'default_impl': 'inc'}),
@@ -273,6 +278,7 @@ distalgo_other_tasks = [
 distalgo_tasks = lamutex_tasks + distalgo_other_tasks
 
 task_lists = [
+    ('weblab', weblab_tasks),
     ('twitter', twitter_tasks),
     ('wifi', wifi_tasks),
     ('django', django_tasks),

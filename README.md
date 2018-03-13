@@ -1,3 +1,7 @@
+# A fork to play around #
+
+`python3 -m experiments.regenerate_benchmarks weblab`
+
 # IncOQ #
 
 IncOQ is a system that takes in a program with high-level queries,
